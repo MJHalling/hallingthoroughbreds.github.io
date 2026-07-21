@@ -20,49 +20,41 @@
       background: linear-gradient(180deg, #461D7C 0%, #2F1354 100%);
       color: var(--white);
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
 
-    /* HEADER */
-    header {
-      padding: 30px 40px;
-      text-align: left;
-    }
-
-    .wordmark {
-      max-width: 460px;
-      display: block;
-    }
-
-    /* MAIN CENTERED LOGO */
+    /* MAIN LOGO */
     .main-logo {
       display: block;
-      margin: 40px auto 40px;
+      margin: 60px auto 40px;
       max-width: 600px;
     }
 
     /* BODY TEXT */
     .body-text {
-      max-width: 900px;
+      max-width: 700px;
       margin: 0 auto;
-      padding: 0 30px;
-      font-size: 1.25rem;
-      line-height: 1.7;
+      padding: 0 20px;
+      font-size: 1.35rem;
+      line-height: 1.75;
       text-align: justify;
     }
 
-    /* CONTACT - BOTTOM LEFT */
+    /* CONTACT */
     .contact {
-      position: fixed;
-      bottom: 30px;
-      left: 30px;
-      font-size: 1.15rem;
+      max-width: 700px;
+      margin: 40px auto 60px;
+      padding: 0 20px;
+      font-size: 1.2rem;
       line-height: 1.6;
+      text-align: left;
     }
 
     .contact-title {
-      font-size: 1.3rem;
+      font-size: 1.35rem;
       font-weight: 600;
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .contact a {
@@ -70,35 +62,21 @@
       text-decoration: none;
       font-weight: 600;
       display: block;
+      margin-top: 6px;
     }
 
-    /* SILKS SIGN-OFF - BOTTOM RIGHT */
-    .silks-signoff {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 260px;
-      height: 260px;
-      background: var(--white);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.35);
-    }
-
-    .silks-signoff img {
+    /* PRIMARY LOGO AT BOTTOM */
+    .primary-logo {
+      display: block;
+      margin: 40px auto 40px;
       max-width: 180px;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="wordmark.png" alt="Halling Thoroughbreds" class="wordmark">
-  </header>
-
-  <img src="primary.png" alt="Halling Thoroughbreds Logo" class="main-logo">
+  <img src="secondary.png" alt="Halling Thoroughbreds" class="main-logo">
 
   <div class="body-text">
     Through racing partnerships, Halling Thoroughbreds has campaigned more than thirty horses,
@@ -113,9 +91,7 @@
     <a href="mailto:mark.halling@gmail.com">mark.halling@gmail.com</a>
   </div>
 
-  <div class="silks-signoff">
-    <img src="silks.png" alt="Halling Thoroughbreds Silks">
-  </div>
+  <img src="primary.png" alt="Halling Thoroughbreds Primary Logo" class="primary-logo">
 
 </body>
 </html>
