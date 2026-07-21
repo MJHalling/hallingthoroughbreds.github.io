@@ -8,117 +8,94 @@
     :root {
       --purple: #461D7C;
       --white: #ffffff;
-      --text: #222;
     }
 
     body {
       margin: 0;
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: var(--white);
-      color: var(--text);
-    }
-
-    /* HERO */
-    .hero {
       background: var(--purple);
       color: var(--white);
-      padding: 60px 20px 80px;
       text-align: center;
-      position: relative;
     }
 
-    /* White stripe motif from the silks */
-    .hero::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 12px;
-      background: var(--white);
+    header {
+      padding: 30px;
+      text-align: left;
     }
 
-    /* Wordmark */
     .wordmark {
-      max-width: 320px;
-      margin: 0 auto 25px;
+      max-width: 380px;
       display: block;
+      margin-left: 20px;
     }
 
-    h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      letter-spacing: 1px;
+    .silks-circle {
+      width: 260px;
+      height: 260px;
+      background: var(--white);
+      border-radius: 50%;
+      margin: 40px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .tagline {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    /* BODY */
-    .container {
-      max-width: 700px;
-      margin: 60px auto;
-      padding: 0 20px;
-      text-align: center;
-    }
-
-    /* Silks image */
-    .silks {
+    .silks-circle img {
       max-width: 180px;
-      margin: 40px auto 20px;
-      display: block;
     }
 
-    .contact {
-      margin-top: 40px;
+    .body-text {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+
+    .emails {
       font-size: 1.1rem;
+      margin-top: 30px;
+      line-height: 1.7;
     }
 
-    .contact a {
-      color: var(--purple);
+    .emails a {
+      color: var(--white);
       text-decoration: none;
       font-weight: bold;
     }
 
     footer {
-      margin-top: 80px;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
+      margin-top: 60px;
+      padding: 30px;
+      font-size: 1rem;
+      opacity: 0.85;
     }
   </style>
 </head>
 <body>
 
-  <div class="hero">
-    <!-- Replace src with your actual wordmark file path in the repo -->
+  <header>
     <img src="wordmark.png" alt="Halling Thoroughbreds" class="wordmark">
-    <h1>Halling Thoroughbreds</h1>
-    <p class="tagline">California-based thoroughbred ownership & racing partnership</p>
+  </header>
+
+  <div class="silks-circle">
+    <img src="silks.png" alt="Halling Thoroughbreds Silks">
   </div>
 
-  <div class="container">
+  <p class="body-text">
+    Through racing partnerships, Halling Thoroughbreds has campaigned more than 30 horses,
+    including five stakes winners and two Grade 1 winners. Based in California, our runners
+    have competed across the country and around the world, with starts at Royal Ascot,
+    Newmarket, Chantilly, Meydan, and three Breeders’ Cup appearances.
+  </p>
 
-    <!-- Replace src with your actual silks file path in the repo -->
-    <img src="silks.png" alt="Halling Thoroughbreds Silks" class="silks">
-
-    <p>
-      Halling Thoroughbreds manages a selective stable focused on soundness, long-term development,
-      and competitive performance across California racing.
-    </p>
-
-    <div class="contact">
-      <strong>Contact Us</strong><br>
-      <a href="mailto:mark@halling.org">mark@halling.org</a>
-    </div>
+  <div class="emails">
+    <a href="mailto:cristy.halling@gmail.com">cristy.halling@gmail.com</a><br>
+    <a href="mailto:mark.halling@gmail.com">mark.halling@gmail.com</a>
   </div>
 
   <footer>
-    © Halling Thoroughbreds — Encinitas, California
+    Halling Thoroughbreds
   </footer>
 
 </body>
