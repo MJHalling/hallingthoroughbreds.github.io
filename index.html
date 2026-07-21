@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Halling Thoroughbreds</title>
+
+  <!-- Modern geometric font similar to Futura PT -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --purple: #461D7C;
@@ -12,8 +16,8 @@
 
     body {
       margin: 0;
-      font-family: 'Georgia', 'Times New Roman', serif;
-      background: var(--purple);
+      font-family: 'Nunito Sans', sans-serif;
+      background: linear-gradient(180deg, #461D7C 0%, #2F1354 100%);
       color: var(--white);
     }
 
@@ -24,24 +28,45 @@
     }
 
     .wordmark {
-      max-width: 420px;
+      max-width: 460px;
       display: block;
     }
 
-    /* SILKS CENTERPIECE */
+    /* HEXAGON SILKS */
     .silks-wrapper {
-      width: 420px;
-      height: 420px;
+      width: 520px;
+      height: 450px;
+      margin: 60px auto 50px;
+      position: relative;
+    }
+
+    .silks-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 520px;
+      height: 450px;
       background: var(--white);
-      border-radius: 50%;
-      margin: 50px auto 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      clip-path: polygon(
+        50% 0%,
+        90% 25%,
+        90% 75%,
+        50% 100%,
+        10% 75%,
+        10% 25%
+      );
+      z-index: 1;
     }
 
     .silks-wrapper img {
-      max-width: 320px;
+      position: relative;
+      z-index: 2;
+      max-width: 360px;
+      top: 45px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     /* BODY TEXT */
@@ -57,23 +82,23 @@
     /* CONTACT */
     .contact {
       max-width: 900px;
-      margin: 50px auto 80px;
+      margin: 60px auto 100px;
       padding: 0 30px;
       font-size: 1.15rem;
     }
 
     .contact-title {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin-bottom: 10px;
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 12px;
     }
 
     .contact a {
       color: var(--white);
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       display: block;
-      margin-top: 6px;
+      margin-top: 8px;
     }
   </style>
 </head>
@@ -89,7 +114,7 @@
 
   <p class="body-text">
     Through racing partnerships, Halling Thoroughbreds has campaigned more than thirty horses,
-    including five stakes winners and two Grade 1 winners. Based in Del Mar, our runners have
+    including five stakes winners and two Grade 1 winners. Based in Del Mar, our horses have
     competed across the country and around the world, with starts at Royal Ascot, Newmarket,
     Chantilly, Meydan, and three Breeders’ Cup appearances.
   </p>
