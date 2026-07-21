@@ -12,63 +12,68 @@
 
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Georgia', 'Times New Roman', serif;
       background: var(--purple);
       color: var(--white);
-      text-align: center;
     }
 
+    /* HEADER */
     header {
-      padding: 30px;
+      padding: 30px 40px;
       text-align: left;
     }
 
     .wordmark {
-      max-width: 380px;
+      max-width: 420px;
       display: block;
-      margin-left: 20px;
     }
 
-    .silks-circle {
-      width: 260px;
-      height: 260px;
+    /* SILKS CENTERPIECE */
+    .silks-wrapper {
+      width: 420px;
+      height: 420px;
       background: var(--white);
       border-radius: 50%;
-      margin: 40px auto;
+      margin: 50px auto 40px;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
-    .silks-circle img {
-      max-width: 180px;
+    .silks-wrapper img {
+      max-width: 320px;
     }
 
+    /* BODY TEXT */
     .body-text {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-
-    .emails {
-      font-size: 1.1rem;
-      margin-top: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 30px;
+      font-size: 1.25rem;
       line-height: 1.7;
+      text-align: justify;
     }
 
-    .emails a {
+    /* CONTACT */
+    .contact {
+      max-width: 900px;
+      margin: 50px auto 80px;
+      padding: 0 30px;
+      font-size: 1.15rem;
+    }
+
+    .contact-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .contact a {
       color: var(--white);
       text-decoration: none;
       font-weight: bold;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 30px;
-      font-size: 1rem;
-      opacity: 0.85;
+      display: block;
+      margin-top: 6px;
     }
   </style>
 </head>
@@ -78,25 +83,22 @@
     <img src="wordmark.png" alt="Halling Thoroughbreds" class="wordmark">
   </header>
 
-  <div class="silks-circle">
+  <div class="silks-wrapper">
     <img src="silks.png" alt="Halling Thoroughbreds Silks">
   </div>
 
   <p class="body-text">
-    Through racing partnerships, Halling Thoroughbreds has campaigned more than 30 horses,
-    including five stakes winners and two Grade 1 winners. Based in California, our runners
-    have competed across the country and around the world, with starts at Royal Ascot,
-    Newmarket, Chantilly, Meydan, and three Breeders’ Cup appearances.
+    Through racing partnerships, Halling Thoroughbreds has campaigned more than thirty horses,
+    including five stakes winners and two Grade 1 winners. Based in Del Mar, our runners have
+    competed across the country and around the world, with starts at Royal Ascot, Newmarket,
+    Chantilly, Meydan, and three Breeders’ Cup appearances.
   </p>
 
-  <div class="emails">
-    <a href="mailto:cristy.halling@gmail.com">cristy.halling@gmail.com</a><br>
+  <div class="contact">
+    <div class="contact-title">Contact</div>
+    <a href="mailto:cristy.halling@gmail.com">cristy.halling@gmail.com</a>
     <a href="mailto:mark.halling@gmail.com">mark.halling@gmail.com</a>
   </div>
-
-  <footer>
-    Halling Thoroughbreds
-  </footer>
 
 </body>
 </html>
